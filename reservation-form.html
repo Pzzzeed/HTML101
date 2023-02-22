@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Reservation</title>
+</head>
+<body>
+    <div class=reserve-box>
+        <h1>Travel Reservation Form</h1>
+        <h3>*denote mandatory</h3>
+        <form action="">
+            <label for="fullname">Full Name *: </label> <br>
+            <input type="text" id="fullname" name="fullname" placeholder=" Full Name" required>
+            <br>
+
+            <label for="email">Email Address *: </label> <br>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            <br>
+
+            <label for="tour-package">Select Tour Package *: </label> <br>
+            <select name="tour-package" id="tour-package" required>
+                <option value="chiangmai">Bangkok</option>
+                <option value="tokyo">Chiangmai</option>
+                <option value="seoul">Hatyai</option>
+                <option value="beijing">Phuket</option>
+            </select>
+            <br>
+
+            <label for="arrival-date">Arrival date *: </label> <br>
+            <input type="date" id="arrival-date" name="arrival-date" vrequired>
+            <br>
+
+            <label for="numberperson">Number of persons *: </label> <br>
+            <input type="number" id="numberperson" name="numberperson" min="1" required>
+            <br>
+
+            <label for="avail">What would you want to avail ? *:</label><br>
+            <label for="boarding">Breakfast :</label>
+            <input type="checkbox" id="boarding" name="avial1" value="boarding">
+            <br>
+            <label for="fooding">Scuba :</label>
+            <input type="checkbox" id="fooding" name="avial2" value="fooding">
+            <br>
+            <label for="sightsee">Sight Seeing :</label>
+            <input type="checkbox" id="sightsee" name="avial3" value="sightsee">
+            <br>
+
+            <label for="discount">Discount Coupon Code : </label> <br>
+            <input type="text" id="discount" name="discount" placeholder="COUPON CODE">
+            <br>
+
+            <label for="termandcondition">Terms and Conditions * :</label> <br>
+            <input type="radio" id="agree" name="termandcondition" value="agree">
+            <label for="agree" class="right-radio">I agree </label>
+            <input type="radio" id="disagree" name="termandcondition" value="disagree">
+            <label for="disagree" class="right-radio">I disagree </label>
+            <br>
+
+            <div class="center">
+                <button type="submit" class="submit-btn">Complete Your Package</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
